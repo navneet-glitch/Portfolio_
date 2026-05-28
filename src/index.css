@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-white via-soft-beige to-white text-text-grey overflow-x-hidden;
+    min-height: 100vh;
+  }
+
+  a {
+    @apply no-underline;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-10 py-3 rounded-full font-semibold font-poppins text-white cursor-pointer transition-all;
+    background: linear-gradient(135deg, #FFD6E7, #E5D9FF);
+    box-shadow: 0 15px 40px rgba(255, 214, 231, 0.3);
+  }
+
+  .btn-primary:hover {
+    @apply -translate-y-1;
+    box-shadow: 0 25px 60px rgba(255, 214, 231, 0.5);
+  }
+
+  .btn-secondary {
+    @apply px-10 py-3 rounded-full font-semibold font-poppins text-text-grey cursor-pointer transition-all;
+    background: rgba(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 214, 231, 0.3);
+  }
+
+  .btn-secondary:hover {
+    @apply -translate-y-1;
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 214, 231, 0.6);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.35);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 214, 231, 0.25);
+  }
+
+  .glass-card-light {
+    background: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 214, 231, 0.3);
+  }
+
+  .section-title {
+    @apply text-4xl font-bold text-center font-outfit;
+    background: linear-gradient(135deg, #FFD6E7, #E5D9FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-primary, .btn-secondary {
+    @apply px-6 py-2 text-sm;
+  }
+
+  .section-title {
+    @apply text-2xl;
+  }
+}
