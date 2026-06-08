@@ -70,10 +70,11 @@ export function About() {
           </div>
 
           <motion.div className="text-gray-700 space-y-4 mb-12 leading-relaxed text-lg">
-            <p>Mamta is a passionate technology enthusiast, creative innovator, and future-focused learner who explores AI, Robotics, Web Design, and immersive digital experiences.</p>
-            <p>With strong interest in futuristic technologies and creativity, she builds modern projects combining innovation, problem-solving, and beautiful design. Her goal is creating technology that feels meaningful and inspiring.</p>
-            <p>She believes in continuous learning, creative thinking, and using technology to build smarter experiences for the future.</p>
-            <p>Beyond coding, Mamta enjoys teaching, mentoring, and sharing knowledge through workshops and hands-on learning experiences.</p>
+            <p>Hi, I'm Mamta, a passionate technology enthusiast, educator, and creative innovator with a strong interest in Artificial Intelligence, Robotics, Web Design, and emerging technologies.</p>
+            <p>I love exploring new ideas and building projects that combine technology, creativity, and problem-solving. My goal is to create meaningful digital experiences that are not only innovative but also useful and inspiring for others.</p>
+            <p>I believe in continuous learning and always enjoy discovering new tools, technologies, and ways to improve my skills. Whether I am working on AI projects, robotics solutions, interactive applications, or creative web experiences, I strive to turn ideas into impactful solutions.</p>
+            <p>Beyond coding and development, I am passionate about teaching and mentoring students. I enjoy helping young learners explore programming, robotics, and technology through hands-on activities and creative projects.</p>
+            <p>My vision is to use technology to build smarter, more engaging, and future-ready experiences that make a positive difference in people's lives. ✨</p>
           </motion.div>
 
           <motion.div ref={statsRef} className="grid grid-cols-2 md:grid-cols-4 gap-4">
