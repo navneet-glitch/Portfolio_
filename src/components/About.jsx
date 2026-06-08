@@ -52,21 +52,11 @@ export function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
         >
-          <div className="flex flex-col md:flex-row gap-8 items-start md:items-center mb-12 pb-12 border-b border-pink-200/20">
-            <motion.div
-              className="w-40 h-40 flex-shrink-0 rounded-2xl bg-gradient-to-br from-pink-400/30 to-purple-400/30 flex items-center justify-center text-6xl border-2 border-pink-300/30 shadow-xl"
-              animate={{ boxShadow: ['0 0 40px rgba(244, 114, 182, 0.2)', '0 0 80px rgba(244, 114, 182, 0.4)', '0 0 40px rgba(244, 114, 182, 0.2)'] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              👩‍💻
-            </motion.div>
-
-            <div>
-              <motion.h3 className="text-3xl font-bold text-gray-800 mb-2">Mamta</motion.h3>
-              <motion.p className="text-xl font-semibold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
-                Innovator • Learner • Creator
-              </motion.p>
-            </div>
+          <div className="text-center mb-12 pb-12 border-b border-pink-200/20">
+            <motion.h3 className="text-3xl font-bold text-gray-800 mb-2">Mamta</motion.h3>
+            <motion.p className="text-xl font-semibold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
+              Innovator • Learner • Creator
+            </motion.p>
           </div>
 
           <motion.div className="text-gray-700 space-y-4 mb-12 leading-relaxed text-lg">
