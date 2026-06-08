@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio/',  // Change this if your repo name is different
+  base: '/',  // Root deployment for Vercel
   server: {
     port: 3000,
     open: true
